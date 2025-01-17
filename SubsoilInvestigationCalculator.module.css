@@ -1,0 +1,17 @@
+/* SubsoilInvestigationCalculator.module.css */
+
+.cardWhite {
+    background-color: #FFFFFF !important;
+    color: #9B6747 !important;
+    border-color: #9B6747 !important;
+  }
+  
+  .cardBlue {
+    background-color: #FFFFFF !important;
+    color: #063898 !important;
+    border-color: #063898 !important;
+  }
+  
+  .cardHeader {
+    border-bottom: 1px solid currentColor !important;
+  }
