@@ -2,6 +2,7 @@
 
 import { useState } from 'react';
 import { Calculator } from 'lucide-react';
+import Image from 'next/image';
 import { Card, CardBody, CardHeader } from "@nextui-org/react";
 
 export default function SubsoilInvestigationCalculator() {
@@ -196,7 +197,7 @@ export default function SubsoilInvestigationCalculator() {
                 >
                   <CardHeader>
                     <div className="flex items-start gap-3">
-                      <span>◄</span>
+                      <Image src="/soil.svg" width={24} height={24} alt="Shovel icon" />
                       <h3 className="text-xl font-bold text-[#9B6747]">Mostres de sòl</h3>
                     </div>
                   </CardHeader>
@@ -220,7 +221,7 @@ export default function SubsoilInvestigationCalculator() {
                 >
                   <CardHeader>
                     <div className="flex items-start gap-3">
-                      <span>◄</span>
+                      <Image src="/water.svg" width={24} height={24} alt="Water icon" />
                       <h3 className="text-xl font-bold text-[#063898]">Mostres d'aigua</h3>
                     </div>
                   </CardHeader>
@@ -237,11 +238,45 @@ export default function SubsoilInvestigationCalculator() {
                     </ul>
                   </CardBody>
                 </Card>
+
+                {/* Nueva Card de Resumen de Muestras Totales */}
+                <Card
+                  classNames={{
+                    base: "bg-white border-2 border-[#9B6747]",
+                    header: "border-b border-[#9B6747] p-4",
+                    body: "p-4"
+                  }}
+                >
+                  <CardHeader>
+                    <h3 className="text-xl font-bold text-[#9B6747]">Resum de mostres totals</h3>
+                  </CardHeader>
+                  <CardBody>
+                    <div className="grid grid-cols-1 gap-4">
+                      <div className="flex items-center gap-3">
+                        <Image src="/soil.svg" width={20} height={20} alt="Shovel icon" />
+                        <span className="text-[#9B6747]">
+                          <strong>Mostres totals de sòls:</strong> {calculatePoints() * (Number(waterTableDepth) <= 3 ? 2 : Number(waterTableDepth) <= 10 ? 3 : 4)}
+                        </span>
+                      </div>
+                      <div className="flex items-center gap-3">
+                        <Image src="/water.svg" width={20} height={20} alt="Water icon" />
+                        <span className="text-[#063898]">
+                          <strong>Mostres totals d'aigua:</strong> {calculateWaterTablePoints()}
+                        </span>
+                      </div>
+                    </div>
+                  </CardBody>
+                </Card>
               </div>
             </section>
           </>
         )}
       </div>
+
+      {/* Footer */}
+      <footer className="mt-12 pt-4 border-t text-center text-sm text-gray-600">
+        Aplicació creada per <a href="https://omarcazorla.github.io/" target="_blank" rel="noopener noreferrer" className="text-[#9B6747] hover:underline">Omar Cazorla</a>. Basat en la Guia <em><a href="https://aca.gencat.cat/web/.content/10_ACA/J_Publicacions/03-guies/13-Investigacio_preliminar_qualitat_subsol.pdf">Investigació preliminar de la qualitat del subsòl. Requisits mínims</a></em>.
+      </footer>
     </div>
   );
 }
