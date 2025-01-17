@@ -1,4 +1,4 @@
-🌎 Proba-ho aquí:
+🌎 Prova-ho aquí:
 https://investigacio-preliminar-qualitat-subsol.vercel.app/
 
 # Investigació Preliminar de la Qualitat del Subsòl
