@@ -89,7 +89,7 @@ export default function SubsoilInvestigationCalculator() {
               onChange={(e) => setHasPreInfo(e.target.checked)}
               className="w-5 h-5 rounded"
             />
-            Disposem d'informació prèvia
+            Es disposa d'informació prèvia
           </label>
         </div>
 
@@ -103,7 +103,7 @@ export default function SubsoilInvestigationCalculator() {
               onChange={(e) => setFocusType(e.target.value)}
               className="w-full p-3 border-2 rounded-lg"
             >
-              <option value="homogeni">Distribució homogènia</option>
+              <option value="homogeni">Distribució homogènia (reblerts)</option>
               <option value="unic">Focus únic</option>
               <option value="compost">Focus compost</option>
             </select>
@@ -119,7 +119,7 @@ export default function SubsoilInvestigationCalculator() {
 
         {!isValid && hasCalculated && (
           <p className="text-red-600 font-bold">
-            * Si us plau, omple tots els camps obligatoris
+            * Si us plau, ompli tots els camps obligatoris
           </p>
         )}
 
