@@ -1,13 +1,15 @@
+##Proba-ho aquí: https://investigacio-preliminar-qualitat-subsol.vercel.app/
+
 # Investigació Preliminar de la Qualitat del Subsòl
 
 Calculadora web per determinar els requisits mínims d'una investigació preliminar de la qualitat del subsòl i el seu corresponent informe.
 
 ## Descripció
 
-Aquesta aplicació web ajuda als professionals del sector ambiental a calcular:
+Aquesta aplicació web ajuda als professionals del sector a calcular:
 - El nombre de punts d'investigació necessaris segons la superfície
-- Els punts d'investigació fins el nivell freàtic
-- Les mostres mínimes per punt segons la profunditat
+- El nombre de punts d'investigació que han d'arribar al nivell freàtic
+- Les mostres mínimes per punt, segons la profunditat d'investigació
 - Els requisits específics per mostres d'aigua
 
 ## Funcionalitats
