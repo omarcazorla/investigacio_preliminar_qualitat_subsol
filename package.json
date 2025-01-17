@@ -21,10 +21,12 @@
     "@stitches/react": "^1.2.8",
     "class-variance-authority": "^0.7.1",
     "clsx": "^2.1.1",
+    "date-fns": "^4.1.0",
     "framer-motion": "^11.18.0",
     "lucide-react": "^0.263.1",
     "next": "14.0.4",
     "react": "^18",
+    "react-day-picker": "^9.5.0",
     "react-dom": "^18",
     "tailwind-merge": "^2.6.0"
   },
